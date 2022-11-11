@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      background-color: #755ba4;
+      color: #47ff00;
+    }
+  </style>
+  <title>student_Details</title>
+</head>
+<body>
+  <h1>Example 12.1</h1>
+  {{data}}<br />
+  {% for key, value in data.items %}<br/>
+  {{ key }}<br/>
+  {% for k, v in value.items %}
+  {{k}} = {{v}}
+  {% endfor %}
+  {% endfor %}
+
+  <h2>Example 12.2</h2>
+  {% for key, value in data.items %}
+  {% for k, v in value.items %}
+  {{forloop.parentloop.counter}} {{k}} = {{v}} <br>
+  {% endfor %}
+  {% endfor %}
+</body>
+</html>

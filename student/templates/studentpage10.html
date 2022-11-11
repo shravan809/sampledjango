@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      background-color: #755ba4;
+      color: #47ff00;
+    }
+  </style>
+  <title>student_Details</title>
+</head>
+<body>
+   <h2>Example 11.1</h2>
+  {{details}}<br />
+  {% for key, value in data.items %}
+  {{ key }} = {{ value }} <br />
+  {% endfor %}
+         <h2>Example 11.2<h2>
+        {{details}}<br/>
+        {%for key,value in data.items %}
+        {{key}}<br/>
+        {%endfor%}
+        <h2>Example 11.3<h2>
+        {{details}}<br/>
+        {%for key,value in data.items %}
+        {{value}}<br/>
+        {%endfor%}
+</body>
+</html>
